@@ -23,9 +23,3 @@ function limpar(form)
     form.inputQuantidade.value = "1";
     form.inputDescricao.value = " ";
 }
-
-function cancelar(form)
-{
-    
-}
-
