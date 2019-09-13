@@ -1,9 +1,3 @@
-function cal_media(n1,n2)
-{
-    var m = (n1+n2);
-    return m;
-}
-
 function comfirmar(form)
 {
 
