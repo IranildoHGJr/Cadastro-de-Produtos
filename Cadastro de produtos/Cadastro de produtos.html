@@ -37,8 +37,12 @@
       </div>     
       <label for="valprouni" class="col-sm-2 col-form-label">Valor do Produto Unitario: </label>
            <div class="col-sm-4 col-xs-12">
-              <input name="valprouni" type="text" required="true" class="form-control" id="valprouni" placeholder="Valor do Produto Unitario">
+              <div class="input-group-prepend">
+                  <span class="input-group-text">R$</span>
+                
+              <input name="valprouni" type="number" required="true" class="form-control" id="valprouni" placeholder="Valor do Produto Unitario">
             </div>
+          </div>
       <label for="despro" class="col-sm-2 col-form-label">Descrição do Produto: </label>
            <div class="col-sm-4 col-xs-12">
               <input type="text" name="despro" required="true" class="form-control" id="despro" placeholder="Descrição do Produto">
