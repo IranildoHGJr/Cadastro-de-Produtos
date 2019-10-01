@@ -21,20 +21,25 @@
     <nav>MENU</nav>
     <section>
 <form name="formulario" method="post" onsubmit="return processar('myTable')">
-  <div style="margin-top: 20px;margin-bottom: 20px;margin-left: 20px;width: 100%;">
-      <label for="nomedoproduto" class="col-sm-2 col-form-label">Codigo do produto: </label>
+  <div style="width: 100%;">
+      <label for="codigoProduto" class="col-sm-2 col-form-label">Codigo do produto: </label>
           <div class="col-sm-4 col-xs-12">
               <input name="codpro" type="text" required="true" class="form-control" id="codpro" placeholder="Codigo do produto">
           </div>
-      <label for="codigoProduto" class="col-sm-2 col-form-label">Nome do Produto: </label>
+      <label for="nomedoproduto" class="col-sm-2 col-form-label">Nome do Produto: </label>
           <div class="col-sm-4 col-xs-12">
-              <input name="nompro"type="text" required="true" class="form-control" id="nompro" placeholder="Nome do Produto">
+              <input name="nompro" type="text" required="true" class="form-control" id="nompro" placeholder="Nome do Produto">
            </div>
-      <label for="nomedoproduto" class="col-sm-2 col-form-label">Valor do Produto Unitario: </label>
+      <label for="inputQuantidade" class="col-sm-2 col-form-label">Quantidade: </label>
+           <div class="col-sm-4 col-xs-12">
+               <input name="inpQua" type="number" required="true" class="form-control" id="inputQuantidade" min="1" value="1"
+                   placeholder="Quantidade">
+      </div>     
+      <label for="valprouni" class="col-sm-2 col-form-label">Valor do Produto Unitario: </label>
            <div class="col-sm-4 col-xs-12">
               <input name="valprouni" type="text" required="true" class="form-control" id="valprouni" placeholder="Valor do Produto Unitario">
             </div>
-      <label for="codigoProduto" class="col-sm-2 col-form-label">Descrição do Produto: </label>
+      <label for="despro" class="col-sm-2 col-form-label">Descrição do Produto: </label>
            <div class="col-sm-4 col-xs-12">
               <input type="text" name="despro" required="true" class="form-control" id="despro" placeholder="Descrição do Produto">
            </div>
@@ -52,6 +57,7 @@
             <tr>
                 <th scope="col">Codigo do produto</th>
                 <th scope="col">Nome do Produto</th>
+                <th scope="col">Quantidade</th>
                 <th scope="col">Valor do produto unitario</th>
                 <th scope="col">Descrição do produto</th>
                 </tr>
